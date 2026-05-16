@@ -1,0 +1,25 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@theme {
+  --color-primary: #d4af35;
+  --color-accent-red: #8b0000;
+  --color-bg-light: #f8f7f6;
+}
+
+@layer base {
+  body {
+    @apply bg-bg-light text-slate-900;
+  }
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #d4af3544;
+  border-radius: 10px;
+}
